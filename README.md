@@ -59,7 +59,7 @@ TOGETHER_API_KEY=your_api_key_here
 
 ```bash
 cd app
-streamlit run main.py
+streamlit run app.py
 ```
 
 4️⃣ Run the FastAPI backend
