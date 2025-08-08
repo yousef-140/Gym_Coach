@@ -1,7 +1,7 @@
-
 # 🏋️‍♂️ Gym Assistant
 
-An intelligent personal gym assistant powered by RAG (retrieval-augmented generation) with FAISS, supporting workout and nutrition question answering, plus a calories and protein needs calculator.
+A smart personal gym assistant using RAG (with FAISS) to answer workout and nutrition questions.  
+With a dedicated page to help you calculate your daily calorie and protein needs.
 
 ---
 
@@ -26,13 +26,13 @@ GYM ASSISTANT/
 │
 ├── data/
 │   ├── faiss_gym_index/   ← FAISS index
-│   ├── exercises.json     ← workouts data
-│   └── nutrition.json     ← nutrition data
+│   ├── Gym Exercises Dataset     ← workouts data
+│   └── daily_food_nutrition_datase     ← nutrition data
 │
 ├── app/
-│   ├── main.py            ← Streamlit UI
+│   ├── app.py            ← Streamlit UI
 │   └── pages/
-│       └── calc.py        ← calculator page
+│       └── Nutrition_page.py        ← calculator page
 │
 ├── .env                   ← environment variables
 ├── requirements.txt
@@ -75,13 +75,23 @@ uvicorn fast:app --reload
 
 - Uses LangChain + FAISS to retrieve relevant knowledge from nutrition/workout files.  
 - Translates user queries if in Arabic, and translates back the answers.  
-- Offers a calories and protein needs calculator using simple formulas inside the Streamlit page.
+- Offers a calories and protein needs calculator using simple formulas inside the Streamlit page.  
+- All datasets used (nutrition and workouts) are included locally in the GitHub repository under the `data/` folder.
+
+---
+
+## 📊 Data Sources
+
+- All datasets used in this project are available in the repository under the `data/` directory:
+  - `Gym Exercises Dataset` for workout data
+  - `daily_food_nutrition_dataset` for nutrition facts
+  - `faiss_gym_index/` for the FAISS vector index
 
 ---
 
 ## 🙌 Contributing
 
-Feel free to open a Pull Request or Issue if you want to contribute or suggest improvements!  
+Feel free to open a Pull Request or Issue if you want to contribute or suggest improvements!
 
 ---
 
