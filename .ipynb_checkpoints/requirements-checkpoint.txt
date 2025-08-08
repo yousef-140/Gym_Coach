@@ -1,0 +1,16 @@
+langchain
+langchain-community
+langchain-huggingface
+faiss-cpu
+sentence-transformers
+together
+unstructured[all-docs]
+pypdf
+python-dotenv
+pandas
+openpyxl
+tqdm
+requests
+streamlit
+fastapi
+uvicorn
